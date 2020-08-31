@@ -1,0 +1,179 @@
+@font-face{
+	font-family: BalooTamma2;
+	src: url(../fonts/BalooTamma2-Regular.ttf);
+	font-weight: 300;
+}
+
+@font-face{
+	font-family: BalooTamma2;
+	src: url(../fonts/BalooTamma2-SemiBold.ttf);
+	font-weight: 600;
+}
+
+@font-face{
+	font-family: BalooTamma2;
+	src: url(../fonts/BalooTamma2-ExtraBold.ttf);
+	font-weight: 800;
+}
+
+@font-face{
+	font-family: BalooTamma2;
+	src: url(../fonts/BalooTamma2-Medium.ttf);
+	font-weight: 500;
+}
+
+body{
+	font-family: BalooTamma2, arvo, "Helvetica neue", serif;
+}
+
+.navbar {
+	background-color: transparent;
+	border: none;
+	padding-top: 10px;
+}
+
+.navbar-brand img{
+	width: 90%;
+	max-width: 200px;
+}
+
+.navbar-inverse .navbar-nav>li>a {	
+	color: #fefefe;
+	opacity: .7;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+
+.jumbotron {
+	background: url(../images/background.jpg) center center;
+	background-size: cover;
+	padding-bottom: 210px;
+	padding-top: 210px;
+	border-top: 3px solid #e74c3c;
+	margin-top: -80px;
+	margin-bottom: 0px;
+}
+
+.jumbotron h1{
+	padding: 10px;
+	margin: 10px 20px;
+	font-weight: 600;
+	font-size: 60px;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(0,0,0,.2);
+	text-shadow: 1px 1px 2px #333;
+}
+
+#bottom .col-sm-4{
+	min-height: 300px;
+	text-align: center;
+	padding-top: 300px;
+}
+
+#bottom p{
+	color: #555;
+	font-weight: 400;
+	font-size: 18px;	
+}
+
+#bottom a:hover{
+	text-decoration: none;
+}
+
+#bottom .col-sm-4 .btn-success{
+	font-size:16px;
+}
+
+#bottom .col-sm-4:hover{
+	opacity: .9;
+}
+
+#bottom img{
+	max-width: 100%;
+}
+
+#web {
+	background-image: url(../images/web.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#foto {
+	background-image: url(../images/foto.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-y: -90px;
+}
+
+#adv {
+	background-image: url(../images/adventure.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-y: -80px;
+}
+
+footer{
+	background-color: #333;
+	color: #fefefe;	
+	padding: 15px;
+	font-size: 16px;
+	font-family: BalooTamma2, arvo, "Helvetica neue", serif;
+}
+
+footer p{
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+footer a{
+	color: #ccc;
+	font-size: 25px;
+}
+
+/* Universal Styling */
+.highlight{
+	color: #e74c3c;
+}
+
+.right-align{
+	text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	
+	#bottom p{
+		color: #fff;
+	}
+	
+	#web p{
+		color: #333;
+	}
+	
+	#bottom col-sm-4{
+		min-height: 425px;
+		padding-top: 55px;
+		padding-bottom: 15px;
+	}
+	
+	.jumbotron{
+		margin-top: -200px;
+		padding: 20px;
+		padding-top: 200px;
+		padding-bottom: 60px;
+		
+	}
+	
+	.navbar-brand img{
+		width: 50%;
+	}
+	
+	.navbar-inverse .navbar-collapse {
+		background-color: #333;
+		border: none;
+	}
+}
