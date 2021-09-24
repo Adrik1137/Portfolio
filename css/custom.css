@@ -29,7 +29,15 @@ body{
 .navbar {
 	background-color: transparent;
 	border: none;
-	padding-top: 10px;
+	padding-top: 0px;
+}
+
+.navbar-brand i{
+	font-size: 40px;;
+}
+
+.navbar-brand i:hover{
+	color:#26a1f3;
 }
 
 .navbar-brand img{
@@ -48,7 +56,7 @@ body{
 }
 
 .jumbotron {
-	background: url(../images/background.jpg) center center;
+	background: url(../images/code-bckg.jpg) center center;
 	background-size: cover;
 	padding-bottom: 210px;
 	padding-top: 210px;
@@ -64,14 +72,22 @@ body{
 	font-size: 60px;
 	text-transform: uppercase;
 	color: white;
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(255,255,255,.5);
+    border-radius: 35px;
 	text-shadow: 1px 1px 2px #333;
 }
 
 #bottom .col-sm-4{
 	min-height: 300px;
 	text-align: center;
-	padding-top: 300px;
+	padding-top: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.portfolio-list{
+	max-width: 80%;
+	text-align: left;
 }
 
 #bottom p{
@@ -94,26 +110,19 @@ body{
 
 #bottom img{
 	max-width: 100%;
+	margin-bottom: 10px;
 }
 
 #web {
-	background-image: url(../images/web.jpg);
-	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
 #foto {
-	background-image: url(../images/foto.jpg);
-	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position-y: -90px;
 }
 
 #adv {
-	background-image: url(../images/adventure.jpg);
-	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position-y: -80px;
 }
 
 footer{
@@ -136,11 +145,19 @@ footer a{
 
 /* Universal Styling */
 .highlight{
-	color: #e74c3c;
+	color: #26a1f3;
 }
 
 .right-align{
 	text-align: right;
+}
+
+.under-construction{
+	min-height: auto;
+	background: url(../images/under-construction.png) center center;
+	background-size: cover;
+
+	text-align: center;
 }
 
 /* Responsive design */
