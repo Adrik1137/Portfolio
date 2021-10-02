@@ -60,8 +60,6 @@ body{
 	background-size: cover;
 	padding-bottom: 210px;
 	padding-top: 210px;
-	border-top: 3px solid #e74c3c;
-	margin-top: -80px;
 	margin-bottom: 0px;
 }
 
@@ -163,10 +161,6 @@ footer a{
 /* Responsive design */
 @media (max-width: 768px) {
 	
-	#bottom p{
-		color: #fff;
-	}
-	
 	#web p{
 		color: #333;
 	}
@@ -183,6 +177,10 @@ footer a{
 		padding-top: 200px;
 		padding-bottom: 60px;
 		
+	}
+
+	.jumbotron h1{
+		font-size: 30px;
 	}
 	
 	.navbar-brand img{
