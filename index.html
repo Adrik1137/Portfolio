@@ -9,6 +9,12 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Carousel CSS-->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <!-- Utilities CSS-->
+    <link href="css/utilities.css" rel="stylesheet">
+
 	<!-- Mi propio CSS -->
 	<link href="css/custom.css" rel="stylesheet">
 	
@@ -25,112 +31,241 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
   
-  <div class="navbar navbar-inverse navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Christian Alvarado</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><i class="fas fa-terminal"></i></a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#portingProjects">Porting Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://adrik1137.github.io/EfectoHumano/">Ejemplo Web</a></li>
-            <li><a href="games-examples.html">Juegos</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="porting-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Porting Projects.</h1>
+                <p class="opacity-75">Some of the projects I've worked in to bring to consoles.</p>
+                <p><a class="btn btn-lg btn-primary" href="#portingProjects">Check them up</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="jobs-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Job experience.</h1>
+                <p>The places I've worked in.</p>
+                <p><a class="btn btn-lg btn-primary" href="#experience">See more</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="education-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Degrees & certifications.</h1>
+                <p>Different certifications I have.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Look at them</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
+      <p class="freepik-disclaimer">Photos from Freepik</p>
 
+      <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+    
+        <div id="portingProjects" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">The Outbound Ghost.</h2>
+            <ul class="lead">
+              <li>Porting for PS4, PS5, Xbox One and Xbox Series</li>
+              <li>Dialogue and interaction system redesign and implementation</li>
+              <li>General optimizations</li>
+            </ul>
+            <p><a class="btn btn-lg btn-primary" href="https://store.steampowered.com/app/1276810/The_Outbound_Ghost/">See the game</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="portImg" width="500" height="500" src="images/The-Outbound-Ghost.jpg">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Trifox.</h2>
+            <ul class="lead">
+              <li>Porting for PS4, PS5, Xbox One and Xbox Series</li>
+            </ul>
+            <p><a class="btn btn-lg btn-primary" href="https://store.steampowered.com/app/1211240/Trifox/">See the game</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" width="500" height="500" src="images/Trifox.jpg">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Bunhouse.</h2>
+            <ul class="lead">
+              <li>Made in Unreal Engine</li>
+              <li>Porting for Switch, PS4, PS5, Xbox One and Xbox Series</li>
+              <li>Loading Screen implementation</li>
+              <li>General optimizations</li>
+            </ul>
+            <p><a class="btn btn-lg btn-primary" href="https://store.steampowered.com/app/1617430/Bunhouse/">See the game</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="portImg" width="500" height="500" src="images/Bunhouse.jpg">
+          </div>
+        </div>
 
-    <div class="jumbotron">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">A tale of Paper.</h2>
+            <ul class="lead">
+              <li>Made in Unrela Engine</li>
+              <li>Porting support for PS5</li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" src="images/ATOP.jpg">
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Trading Time.</h2>
+            <ul class="lead">
+              <li>QA and bug fixing</li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" src="images/TOFI.jpg">
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Grotto.</h2>
+            <ul class="lead">
+              <li>QA for PS and Xbox platforms</li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" src="images/Grotto.jpg">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+
+         <!-- Jobs -->
+         <div id="experience" class="row">
+          <div class="col-lg-4">
+            <h2 class="fw-normal">Bromio</h2>
+            <p class="jobDate">Nov 2022 - today</p>
+            <p class="jobTitle">Porting developer.</p>
+            <ul class="jobTasks">
+              <li>Game systems adaptation for consoles</li>
+              <li>Backend & specific systems of each console</li>
+              <li>Framework development for systems</li>
+              <li>System & components redesign</li>
+              <li>Porting necessities & time evaluation</li>
+              <li>Async & sync save-load systems</li>
+              <li>Assessment for teammates & external devs</li>
+              <li>Expansion & documentation of porting proccess & frameworks</li>
+              <li>Submission & patching for all consoles</li>
+              <li>Optimization & design patterns</li>
+              <li>Task planning in sprints</li>
+            </ul>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2 class="fw-normal">Cast & Play</h2>
+            <p class="jobTitle">Gameplay Programmer.</p>
+            <p class="jobDate">June 2022 - Oct 2022</p>
+            <ul class="jobTasks">
+              <li>Match-3 mechanics implementation</li>
+              <li>Unity IAP y Ads implementation</li>
+              <li>Levels & worlds unlocking system</li>
+              <li>Music & SFX implementation</li>
+              <li>Lifes system</li>
+              <li>Camera movement</li>
+              <li>UI implementation</li>
+              <li>Save & Load system</li>
+              <li>Unity editor customization</li>
+            </ul>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2 class="fw-normal">Hajimari</h2>
+            <p class="jobTitle">Lead developer.</p>
+            <p class="jobDate">2020</p>
+            <ul class="jobTasks">
+              <li>Game developed in RPG Maker</li>
+              <li>Scripting for additional functions</li>
+              <li>Yanfly engine integration for live combat</li>
+            </ul>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    
+    <footer>
       <div class="container">
-        <h1>Mi nombre es <span class="highlight">Christian Alvarado</span><br>  y este es mi portafolio web. Soy programador de videojuegos, desarrollo web, fotógrafo y artista digital.</h1>
-        <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
-      </div>
-    </div>
-	
-	<div id="bottom" class="container-fluid">
-		<div class="row">
-			<a href="https://www.renovabiocompany.com">
-				<div id="web" class="col-sm-4">
-          <img src="images/RenovaBio.jpg">
-					<p>Web master de Renovabio</p>
-          <div class="portfolio-list container">
-            <ul>
-              <li>Integración de woocommerce y Stripe</li>
-              <li>Niveles de acceso con roles de usuario</li>
-              <li>Formularios de registro y reportes de ventas</li>
-              <li>Integración de nuevas páginas con Elementor</li>
-            </ul>
-          </div> 
-					<p><button class="btn btn-success"> Ir a Web</button></p>
-				</div>
-			</a>
-				
-			<a href="https://adrik1137.github.io/EfectoHumano/">
-				<div id="foto" class="col-sm-4">
-          <img src="images/Web.jpg">
-					<p>Desarrollo web front-end</p>
-          <div class="portfolio-list container">
-            <ul>
-              <li>Responsivo</li>
-              <li>Bootstrap</li>
-              <li>Fuentes de íconos con Font-Awesome</li>
-              <li>Landing page tipo torre</li>
-            </ul>
-          </div> 
-					<p><button class="btn btn-success">Ver Ejemplo</button></p>
-				</div>
-			</a>
-			
-			<a href="games-examples.html">
-				<div id="adv"  class="col-sm-4">
-					<img src="images/Games.jpg">
-					<p>Desarrollo de videojuegos</p>
-          <div class="portfolio-list container">
-            <ul>
-              <li>Unity 3D</li>
-              <li>RPG Maker</li>
-              <li>C# y JavaScript</li>
-              <li>Base de juegos web</li>
-            </ul>
-          </div>
-					<p><button class="btn btn-success"> Ir a juegos</button></p>
-				</div>
-			</a>
-		</div>
-	</div>
-	
-	<footer>
-		<div class="container">
-			<div class="col-sm-4">
-			<p>Sitio elaborado por Christian Alvarado  <i class="fas fa-camera"></i>  &#169</p>
-			</div>
-			
-      <a href="https://wa.me/525628346080">
-        <div class="col-sm-4 text-center">
-          <p><i class="fab fa-whatsapp"></i> 56 28 34 60 80</p>
-          </div>
-      </a>
+        <a class="float-end" href="mailto:Adrik1137@gmail.com"> <i class="fas fa-envelope"></i> </a>
+        <p>Sitio elaborado por Christian Alvarado  <i class="fas fa-code"></i>  &#169 2024</p>
 
-			<div class="col-sm-4  right-align">
-			<a href="https://www.facebook.com/ChristianAlvaradoFotografia"> <i class="fab fa-facebook"></i> </a>
-			
-			<a href="mailto:Adrik1137@gmail.com"> <i class="fas fa-envelope"></i> </a>
-			
-			<a href="https://www.flickr.com/photos/christianalvarado"> <i class="fab fa-flickr"></i> </a>
-			</div>
-			
-			
-		</div>
-	</footer>
-
+    </footer>
+  </main>
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
