@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head><!--<script src="js/color-modes.js"></script>-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Christian Alvarado, modified from Bootstrap examples">
+    <title>Game Development - Chris D. Alvarado</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <!-- Mi propio CSS -->
+	  <link href="css/custom.css" rel="stylesheet">
+      <link href="css/homepage.css" rel="stylesheet">
+
+    <!-- Titillium font -->
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+	
+	<!-- Font Awesome -->
+	<link href="fonts/Font-Awesome/css/all.css" rel="stylesheet"> 
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+
+<body class="h-100">
+    
+<!-- <main> -->
+  <!-- <div class="cover container col-xxl-8 px-4 py-5"> -->
+    <div class="px-4 py-5 my-5 text-center">
+        <div class="svg-icon">
+            <img class="d-block mx-auto mb-4" src="images/icons/game-dev-icon.svg" alt="">
+        </div>
+        <h1 class="display-5 fw-bold">Game Development</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">I've been working in video games for almost 5 years now, I have experience in many phases of game development, from prototyping, system and game design, console porting, publishing, and even a bit of production.</p>
+        </div>
+    </div>
+  <!-- </div> -->
+
+    <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="jobs-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Game Programming.</h1>
+                <p class="opacity-75">Some of the things I've done in game development.</p>
+                <p><a class="btn btn-lg btn-primary" href="#gameDev">See more</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="porting-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Console porting.</h1>
+                <p>I've brought over 8 projects to console.</p>
+                <p><a class="btn btn-lg btn-primary" href="#porting">Check them out</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="education-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>System design & code.</h1>
+                <p>Some samples of my design process and code examples.</p>
+                <p><a class="btn btn-lg btn-primary" href="#examples">Look at them</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Icons -->
+      <div class="container px-4 py-5" id="gameDev">
+        <h2 class="pb-2 border-bottom">Some of the things I've made in video games</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/save-button-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Save systems</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/prototype-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Prototyping</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/pc-controller-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Gamepad implementation</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/ui-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Modular UI</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/planning-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Game systems</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/data-exchange-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Back end services</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/puzzle-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Plugin implementation</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="d-block mini-icon" src="images/icons/comments-icon.svg" alt="">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4">Dialogues & interactions</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+    
+        <div id="porting" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">The Outbound Ghost.</h2>
+            <ul class="lead">
+              <li>Porting for PS4, PS5, Xbox One and Xbox Series</li>
+              <li>Dialogue and interaction system redesign and implementation</li>
+              <li>General optimizations</li>
+            </ul>
+            <p><a class="btn btn-lg btn-primary" href="https://store.steampowered.com/app/1276810/The_Outbound_Ghost/">See the game</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="portImg" width="500" height="500" src="images/The-Outbound-Ghost.jpg">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Trifox.</h2>
+            <ul class="lead">
+              <li>Porting for PS4, PS5, Xbox One and Xbox Series</li>
+            </ul>
+            <p><a class="btn btn-lg btn-primary" href="https://store.steampowered.com/app/1211240/Trifox/">See the game</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" width="500" height="500" src="images/Trifox.jpg">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Bunhouse.</h2>
+            <ul class="lead">
+              <li>Made in Unreal Engine</li>
+              <li>Porting for Switch, PS4, PS5, Xbox One and Xbox Series</li>
+              <li>Loading Screen implementation</li>
+              <li>General optimizations</li>
+            </ul>
+            <p><a class="btn btn-lg btn-primary" href="https://store.steampowered.com/app/1617430/Bunhouse/">See the game</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="portImg" width="500" height="500" src="images/Bunhouse.jpg">
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">A tale of Paper.</h2>
+            <ul class="lead">
+              <li>Made in Unreal Engine</li>
+              <li>Porting support for PS5</li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" src="images/ATOP.jpg">
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Trading Time.</h2>
+            <ul class="lead">
+              <li>QA and bug fixing</li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" src="images/TOFI.jpg">
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Grotto.</h2>
+            <ul class="lead">
+              <li>QA for PS and Xbox platforms</li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="portImg" src="images/Grotto.jpg">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+
+    <div class="mt-auto"></div>
+  </div>
+
+  <footer>
+      <div class="container">
+        <a class="float-end" href="mailto:Adrik1137@gmail.com"> <i class="fas fa-envelope"></i> </a>
+        <p>Site made by Christian Alvarado  <i class="fas fa-code"></i>  &#169 2025</p>
+
+  </footer>
+
+<!-- </main> -->
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>
