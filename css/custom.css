@@ -43,6 +43,18 @@ body h1{
 	margin-right: 1rem;
 }
 
+.bg-cover{
+	background-size: cover !important;
+}
+
+.h-400{
+	height: 400px;
+}
+
+.black-text{
+	color: black;
+}
+
 .navbar {
 	background-color: transparent;
 	border: none;
